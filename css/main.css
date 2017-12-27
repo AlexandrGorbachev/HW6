@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+.todolist-container{
+    background-color: #eef9e3;
+    display: inline-block;
+    margin: 20px auto;
+    border: 2px solid #687d91;
+    padding: 20px;
+    min-height: 250px;
+    width: 480px;
+    box-shadow: 3px 3px 5px 0 grey;
+}
+.todolist-title{
+    margin: 10px;
+    color: #1d2937;
+}
+.todolist-input-form{
+    margin: 20px;
+}
+#output-item{
+    text-decoration: none;
+    list-style: none;
+    margin:0;
+    cursor: pointer;
+}
+#output-item li{
+    margin-right: 40px;
+    background-color: #f9f0ce;
+    line-height: 25px;
+    position: relative;
+}
+#output-item li:nth-child(3n){
+    background-color: #d3fac3;
+    color: #58af33;
+}
+.check-important:checked+span{
+    color: #ff1e08;
+}
+.check-important:checked+span::before{
+    content:'важное';
+    position: absolute;
+    left: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+input[type="checkbox"]{
+    margin-right:10px;
+}
+span.crossed{
+    text-decoration: line-through;
+    opacity: 0.2;
+}
+
